@@ -28,8 +28,8 @@ here is the basic and simple setting for web development.
 
 ------
 
-- Feel free to tell me which part confused you or I can make some improvement.
+- Feel free to tell me which part is ambiguous or I can make some improvement.
 
 - Here is my email: abalone0204@gmail.com
 
-- Or you can just add a issue XD
+- Or you can just add an issue XD
