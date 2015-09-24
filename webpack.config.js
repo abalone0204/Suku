@@ -33,9 +33,5 @@ module.exports = {
         }],
         noParse: [pathToReact]
     },
-    plugins: PROD ? [
-        new webpack.optimize.UglifyJsPlugin({
-            minimize: true
-        })
-    ] : []
+    plugins: []
 };
