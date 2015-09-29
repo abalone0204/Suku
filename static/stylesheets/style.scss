@@ -7,3 +7,12 @@ h1, p {
 body{
     background: $deep_blue;
 }
+#triangle {
+    margin: 0 auto;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid $sudo_green;
+    height: 0;
+    width: 0;
+}
