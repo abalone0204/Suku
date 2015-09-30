@@ -1,18 +1,10 @@
-$sudo_green:#50e2c2;
-$deep_blue:#23263a;
+@import './_mixin.scss';
+@import './_default.scss';
+@import './logo.scss';
 h1, p {
     color: $sudo_green;
     text-align: center;
 }
 body{
     background: $deep_blue;
-}
-#triangle {
-    margin: 0 auto;
-    border-top: 0px solid transparent;
-    border-left: 0px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid $sudo_green;
-    height: 0;
-    width: 0;
 }
