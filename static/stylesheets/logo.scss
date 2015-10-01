@@ -3,6 +3,11 @@
 $orbit-radius: 300px;
 $dac-size: 30px;
 $dac-position: ($orbit-radius+(-1*$dac-size*2))*0.5;
+@media screen and (max-device-with: 400px) {
+    #suku-logo {
+        width: 100vw;
+    }    
+}
 #suku-logo {
     position: relative;
     width: $orbit-radius;
