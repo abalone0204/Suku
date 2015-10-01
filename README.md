@@ -10,6 +10,20 @@ here is the basic and simple setting for web development.
 
 # Usage
 
+## Automatically build with `Yeoman`
+
+- `npm install -g generator-suku`
+
+- `yo suku`
+
+- Enter your project's name, and some easy config.
+
+- Done!
+
+- You can check my [generator-suku](https://github.com/abalone0204/generator-suku) to see more detail
+
+## Or you can clone this repo, then ...
+
 - First, you need to install [node.js](https://nodejs.org/en/)
 
 - Then you should install [npm](https://www.npmjs.com/)
