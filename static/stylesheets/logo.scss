@@ -1,7 +1,7 @@
 @import './_mixin.scss';
 @import './_default.scss';
-$orbit-radius: 300px;
-$dac-size: 30px;
+$orbit-radius: 200px;
+$dac-size: 20px;
 $dac-position: ($orbit-radius+(-1*$dac-size*2))*0.5;
 @media screen and (max-device-with: 400px) {
     #suku-logo {
