@@ -1,7 +1,7 @@
 @import './_mixin.scss';
 @import './_default.scss';
-$orbit-radius: 200px;
-$dac-size: 20px;
+$orbit-radius: 300px;
+$dac-size: 30px;
 $dac-position: ($orbit-radius+(-1*$dac-size*2))*0.5;
 #suku-logo {
     position: relative;
@@ -21,6 +21,7 @@ $dac-position: ($orbit-radius+(-1*$dac-size*2))*0.5;
         border-radius: 50%;
         transform-style: preserve-3d;
         transform-origin: 50% 50% 0;
+        animation: 1s shinning infinite;
         &:nth-child(2) {
             transform: rotateY(-60deg) rotateX(60deg);
             // animation: 1s first-orbit ease-in infinite;
@@ -37,10 +38,15 @@ $dac-position: ($orbit-radius+(-1*$dac-size*2))*0.5;
 }
 #dac_man {
     position: relative;
+    width: $dac-size * 2;
+    height: $dac-size * 2;
     top: $dac-position;
     left: $dac-position;
-    margin: auto;
-    .dac-part {
+    z-index: 5;
+    &:hover {
+            animation: 2s spinning infinite;
+    }
+    .dac-part {   
         position: absolute;
         margin: 0 auto;
         border-radius: 50%;
@@ -50,6 +56,7 @@ $dac-position: ($orbit-radius+(-1*$dac-size*2))*0.5;
         border-bottom: $dac-size solid $sudo_green;
         height: 0;
         width: 0;
+
     }
     #dac-upper {
         animation: 0.8s top-part infinite;
@@ -85,4 +92,20 @@ $dac-position: ($orbit-radius+(-1*$dac-size*2))*0.5;
     0% {transform: rotateY(70deg) rotateX(0deg);}
     50% {transform: rotateY(60deg) rotateX(60deg);}
     100% {transform: rotateY(70deg) rotateX(0deg);}
+}
+@include keyframes(spinning) {
+    0% {
+        transform: rotate(0deg);
+    } 100% {
+        transform: rotate(360deg);
+    }
+}
+@include keyframes(shinning) { 
+    0% {
+        box-shadow: 0 0 0 transparent;
+    } 50% { 
+        box-shadow: 0 0 25px $sudo_green;
+    } 100% { 
+        box-shadow: 0 0 0 transparent;
+    }
 }
